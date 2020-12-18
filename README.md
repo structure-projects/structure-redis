@@ -32,7 +32,7 @@
      * 注解使用redis锁 参数为对象的使用
      * @param redisLockBo
      */
-    @RedisLock("#key")
+    @RedisLock("#redisLockBo.key")
     public void redisLock(RedisLockBo redisLockBo) {
         System.out.println("redisLock ----> redisLockBo ----> key = " + redisLockBo.getKey());
     }
