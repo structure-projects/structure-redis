@@ -37,6 +37,17 @@
         System.out.println("redisLock ----> redisLockBo ----> key = " + redisLockBo.getKey());
     }
 ```
+####  注解使用redis锁 多个key拼接的key
+```java
+    /**
+     * 注解使用redis锁 多个key拼接的key
+     * @param redisLockBo
+     */
+    @RedisLock("#redisLockBo.key:_#key")
+    public void redisLock(RedisLockBo redisLockBo,String key) {
+        System.out.println("redisLock ----> redisLockBo ----> key = " + redisLockBo.getKey()+ ":" + key);
+    }
+```
 #### 手动获取分布式锁的方式 - 更为灵活
 ```java
 
