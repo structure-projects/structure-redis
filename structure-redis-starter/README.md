@@ -1,7 +1,7 @@
-# structure-redis
-这个项目是对redis相关的封装
+# structure-redis-starter
+structure-redis-starter 对spring-boot-starter-data-redis启动器进行封装  
 ## 主要功能
-- redis分布式锁进行了封装 structure-redis-starter 对spring-boot-starter-data-redis 启动器进行封装
+- redis分布式锁进行了封装
 ## 使用方法 
 ### pom 引用 
 ```xml
