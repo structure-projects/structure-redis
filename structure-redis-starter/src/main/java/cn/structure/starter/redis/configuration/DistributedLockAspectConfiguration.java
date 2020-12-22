@@ -25,7 +25,6 @@ import java.lang.reflect.Method;
  *     RedisLock代理实现类
  * </p>
  * @author chuck
- * @date 2020-12-17
  * @version 1.0.1
  */
 @Aspect
@@ -88,8 +87,8 @@ public class DistributedLockAspectConfiguration {
      * <p>
      *     增强代理 - redisLock的代理核心代理业务
      * </p>
-     * @param pjp
-     * @return
+     * @param pjp 增强代理参数
+     * @return  Object
      * @throws Throwable
      */
     @Around("lockPoint()")

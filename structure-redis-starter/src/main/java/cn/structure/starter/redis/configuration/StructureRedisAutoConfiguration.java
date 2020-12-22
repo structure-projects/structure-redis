@@ -16,7 +16,6 @@ import org.springframework.data.redis.core.RedisTemplate;
  * </p>
  * @author chuck
  * @version 1.0.1
- * @date 2020-12-17
  */
 @Configuration
 @AutoConfigureAfter(RedisAutoConfiguration.class)

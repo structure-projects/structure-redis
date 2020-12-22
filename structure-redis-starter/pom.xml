@@ -6,13 +6,13 @@
     <parent>
         <groupId>cn.structured</groupId>
         <artifactId>structure-dependencies</artifactId>
-        <version>1.0.1.SNAPSHOT</version>
+        <version>1.0.2.RELEASE</version>
     </parent>
 
     <packaging>jar</packaging>
 
     <artifactId>structure-redis-starter</artifactId>
-    <version>1.0.1.SNAPSHOT</version>
+    <version>1.0.1${revision}</version>
     <name>structure-redis-starter</name>
     <description> 对spring-boot-starter-data-redis启动器进行封装正在意义上的零配置启动</description>
 
