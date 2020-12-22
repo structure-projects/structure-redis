@@ -5,7 +5,6 @@ package cn.structure.starter.redis.lock;
  *     分布式锁
  * </p>
  * @author chuck
- * @date 2020-12-17
  * @version 1.0.1
  */
 public interface IDistributedLock {
@@ -36,7 +35,6 @@ public interface IDistributedLock {
       * @param expire 超时时间
       * @param retryTimes 重试次数
       * @param sleepMillis 重试的等待时间
-      * @return
       */
      boolean lock(String key, long expire, int retryTimes, long sleepMillis);
 
@@ -45,7 +43,6 @@ public interface IDistributedLock {
       *     释放锁
       * </p>
       * @param key redisLock 的key
-      * @return
       */
      boolean releaseLock(String key);
 }
