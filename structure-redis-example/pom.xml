@@ -16,6 +16,10 @@
 
     <description>redis 启动器测试例子</description>
 
+    <properties>
+        <structure.version>1.0.1.RELEASE</structure.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,8 +28,17 @@
         <dependency>
             <groupId>cn.structured</groupId>
             <artifactId>structure-redis-starter</artifactId>
-            <version>1.0.1.SNAPSHOT</version>
+            <version>${structure.version}</version>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>develop</id>
+            <properties>
+                <structure.version>1.0.1.SNAPSHOT</structure.version>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>

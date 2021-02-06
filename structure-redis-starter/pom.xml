@@ -7,12 +7,13 @@
         <groupId>cn.structured</groupId>
         <artifactId>structure-dependencies</artifactId>
         <version>1.0.2.RELEASE</version>
+        <relativePath>../../structure-dependencies</relativePath>
     </parent>
 
     <packaging>jar</packaging>
 
     <artifactId>structure-redis-starter</artifactId>
-    <version>1.0.1${revision}</version>
+    <version>1.0.2${revision}</version>
     <name>structure-redis-starter</name>
     <description> 对spring-boot-starter-data-redis启动器进行封装正在意义上的零配置启动</description>
 
@@ -80,5 +81,4 @@
             <artifactId>jedis</artifactId>
         </dependency>
     </dependencies>
-
 </project>
